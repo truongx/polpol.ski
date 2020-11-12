@@ -2,7 +2,7 @@
 title: Pół Polski dla Pół-Polaków!
 date: 2020-11-12
 tags: ['Rzyg']
-published: true
+published: false
 cover_image: ./images/kurwamac.jpg
 canonical_url: false
 description: "Jak to się stało, że w kraju pełnym tylu fantastycznych ludzi
