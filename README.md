@@ -1,5 +1,5 @@
 Blog stworzony na podstawie [Gridsome Blog Starter](https://github.com/gridsome/gridsome-starter-blog), 
-Hostowany przy użyciu [Azure Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static/) i [CloudFlare](https://www.cloudflare.com/).
+hostowany przy użyciu [Azure Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static/) i [CloudFlare](https://www.cloudflare.com/).
 
 ## Instalacja
 
