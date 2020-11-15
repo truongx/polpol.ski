@@ -1,6 +1,6 @@
 <template>
   <Layout :show-logo="false">
-    <h1>polpol.ski</h1>
+    <h1><QText :options="['polpol.ski', 'półpol.ski']" :min-delay="100" :max-delay="3000" /></h1>
     <div class="posts">
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
@@ -33,10 +33,12 @@ query {
 
 <script>
 import PostCard from '~/components/PostCard.vue'
+import QText from '~/components/QText.vue'
 
 export default {
   components: {
-    PostCard
+    PostCard,
+    QText
   },
   metaInfo: {
     title: 'polpol.ski'

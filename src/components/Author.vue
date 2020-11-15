@@ -8,7 +8,7 @@
 		</h1>
 
 		<p class="author__intro">
-			Myślę po polsku. Uczę się pisać.
+			Uczę się pisać.
 		</p>
 
 		<p class="author__links">

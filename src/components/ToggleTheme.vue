@@ -7,23 +7,19 @@
 
 <script>
 export default {
-  data() {
-    return {
-      darkTheme: false
+  computed: {
+    darkTheme() {
+      return this.$store.state.darkTheme;
     }
   },
   methods: {
     toggleTheme() {
-      this.darkTheme = !this.darkTheme
-
-      // This is using a script that is added in index.html
-      window.__setPreferredTheme(
-        this.darkTheme ? 'dark' : 'light'
-      )
+      this.$store.commit('toggleTheme')
+      if (this.$disqus.reset) setTimeout(this.$disqus.reset, 500);
     }
   },
   mounted() {
-    if (window.__theme == 'dark') this.darkTheme = true
+    this.$store.commit('initTheme')
   }
 }
 </script>

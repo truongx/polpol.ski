@@ -9,52 +9,40 @@ module.exports = {
   siteDescription: 'A co, książkę piszesz?',
 
   templates: {
-    Post: '/:title',
     Tag: '/tag/:id'
   },
 
   plugins: [
     {
-      // Create posts from markdown files
-      use: '@gridsome/source-filesystem',
+      use: 'gridsome-plugin-gtm',
+      options: {
+        id: 'GTM-TLKFFXB',
+        enabled: true,
+        debug: true,
+      },
+    },
+    {
+      use: '@gridsome/vue-remark',
       options: {
         typeName: 'Post',
-        path: 'content/posts/*.md',
+        baseDir: './content/posts',
+        template: './src/templates/Post.vue',
         refs: {
-          // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
             typeName: 'Tag',
             create: true
           }
         },
-        remark: {
-          plugins: [
-            [ '@noxify/gridsome-plugin-remark-embed', {
-                'enabledProviders' : ['Youtube'],
-            }]
-          ]
-        }
+        plugins: [
+          '@gridsome/remark-prismjs',
+          [
+            '@noxify/gridsome-plugin-remark-embed',
+            {
+              enabledProviders: ['Youtube', 'Twitter'],
+            },
+          ],
+        ],
       },
-    }
-    // ,
-    // {
-    //   use: '@gridsome/vue-remark',
-    //   options: {
-    //     typeName: 'Content', // Required
-    //     baseDir: './content/posts', // Where .md files are located
-    //   }
-    // }
+    },
   ],
-
-  transformers: {
-    //Add markdown support to all file-system sources
-    remark: {
-      externalLinksTarget: '_blank',
-      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      anchorClassName: 'icon icon-link',
-      plugins: [
-        '@gridsome/remark-prismjs'
-      ]
-    }
-  }
-}
+};

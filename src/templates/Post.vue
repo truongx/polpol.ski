@@ -11,8 +11,9 @@
       <div class="post__header">
         <g-image v-if="$page.post.cover_image" :src="$page.post.cover_image" />
       </div>
-
-      <div class="post__content" v-html="$page.post.content" />
+      
+      <!-- <div class="post__content" v-html="$page.post.content" /> -->
+      <VueRemarkContent class="post__content" />
 
       <div class="post__footer">
         <PostTags :post="$page.post" />
@@ -21,6 +22,7 @@
 
     <div class="post-comments">
       <!-- Add comment widgets here -->
+      <Disqus shortname="polpolski" :identifier="$page.post.title" />
     </div>
 
     <Author class="post-author" />
@@ -107,16 +109,28 @@ query Post ($id: ID!) {
     }
 
     img {
-      width: calc(100% + var(--space) * 2);
-      margin-left: calc(var(--space) * -1);
+      // width: calc(100% + var(--space) * 2);
+      // margin-left: calc(var(--space) * -1);
+      margin: auto;
       display: block;
-      max-width: none;
+      max-width: 100%;
+    }
+
+    figcaption {
+      text-align: center;
+      font-style: italic;
+      font-size: 0.8em;
+      margin-bottom: 10px;
     }
   }
 }
 
 .post-comments {
   padding: calc(var(--space) / 2);
+
+  // color: var(--body-color) !important;
+  margin: 0 auto;
+  max-width: var(--content-width);
 
   &:empty {
     display: none;

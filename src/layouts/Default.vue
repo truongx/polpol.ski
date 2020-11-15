@@ -16,7 +16,7 @@
     </main>
 
     <footer class="footer">
-      <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }} polpol.ski</span>
+      <span class="footer__copyright">© {{ new Date().getFullYear() }} polpol.ski</span>
     </footer>
 
   </div>
@@ -25,6 +25,7 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import ToggleTheme from '~/components/ToggleTheme.vue'
+import Beep from '~/components/Beep.vue'
 
 export default {
   props: {
@@ -32,7 +33,8 @@ export default {
   },
   components: {
     Logo,
-    ToggleTheme
+    ToggleTheme,
+    Beep
   }
 }
 </script>

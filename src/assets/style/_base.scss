@@ -13,6 +13,11 @@ body {
   margin:0;
   padding:0;
   line-height: 1.5;
+
+  ::selection {
+	color: var(--bg-color);
+	background: var(--body-color);
+  }
 }
 
 a:not(.button) {
