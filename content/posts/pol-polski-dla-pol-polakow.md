@@ -51,7 +51,7 @@ W wyborach parlamentarnych i samorządowych sprawa się nieco komplikuje - docho
 ![Karta Sasina](./images/kartasasina.jpg)
 <figcaption>Kopia jednej z zaginionych Kart Sasina</figcaption>
 
-Niewątpliwą zaletą takiego sposobu wybierania naszych reprezentantów jest jego prostota. Największym jej mankamentem jest problem *zmarnowanego głosu*. Zakreślenie krzyżyka przy <QText :options='["niszowym kandydacie", "niszowej kandydatce"]'/> może skutkować tym, że w ostatecznym rozrachunku tak oddany głos nie ma żadnego znaczenia. Co gorsza, głosowanie (zgodnie ze swoim sumieniem) na kogoś, kto "nie ma szans" naraża nas na ataki pt. "Nie jesteś z nami, więc jesteś przeciwko nam". Prowadzi to często do głosowania na tzw. mniejsze zło.🤮
+Niewątpliwą zaletą takiego sposobu wybierania naszych reprezentantów jest jego prostota. Największym mankamentem jest problem *zmarnowanego głosu*. Zakreślenie krzyżyka przy <QText :options='["niszowym kandydacie", "niszowej kandydatce"]'/> może skutkować tym, że w ostatecznym rozrachunku tak oddany głos nie ma żadnego znaczenia. Co gorsza, głosowanie (zgodnie ze swoim sumieniem) na kogoś, kto "nie ma szans" naraża nas na ataki pt. "Nie jesteś z nami, więc jesteś przeciwko nam". Prowadzi to często do głosowania na tzw. mniejsze zło.🤮
 
 **Głosowanie preferencyjne** jest alternatywną metodą, która poszerza arsenał ruchów, które możemy wykonać jako wyborca. Osoby na liście ustawiamy w kolejności od najbardziej do najmniej przez nas preferowanej - może to przyjąć formę zakreślania pól w tabelce bądź wpisywania kolejnych liczb przy nazwiskach <QText :options='["kandydatów.", "kandydatek."]'/>
 
