@@ -8,7 +8,7 @@
 		</h1>
 
 		<p class="author__intro">
-			Uczę się pisać.
+			Napisano przy pomocy modelu językowego uczonego od 1989r.
 		</p>
 
 		<p class="author__links">
