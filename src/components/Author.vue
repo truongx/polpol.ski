@@ -8,7 +8,7 @@
 		</h1>
 
 		<p class="author__intro">
-			Napisano przy pomocy modelu językowego uczonego od 1989r.
+			Napisano przy pomocy modelu językowego trenowanego od 1989r.
 		</p>
 
 		<p class="author__links">
